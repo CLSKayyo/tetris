@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no">
+	<script src="https://kit.fontawesome.com/abf19b79f0.js" crossorigin="anonymous"></script>
+	<title>Jogue Tetris online</title>
+	<style type="text/css">
+		body{
+			background: #202028;
+			color: #fff;
+			font-family: sans-serif;
+			font-size: 2em;
+			text-align:center;
+		}
+
+		canvas{
+			border: solid .2em #fff;
+			height: 80vh;
+		}
+
+		.fa-arrow-left{
+			font-weight: bold;
+			font-size: 4em;
+			color: white;
+			text-decoration: none;
+			position: fixed;
+			bottom:20px;
+			left:5%;
+		}
+
+		.fa-arrow-right{
+			font-weight: bold;
+			font-size: 4em;
+			color: white;
+			text-decoration: none;
+			position: fixed;
+			bottom:20px;
+			right:5%;
+		}
+
+		.fa-undo{
+			font-weight: bold;
+			font-size: 4em;
+			color: white;
+			text-decoration: none;
+			position: fixed;
+			bottom:20px;
+			right:25%;
+		}
+
+		.fa-arrow-down{
+			font-weight: bold;
+			font-size: 4em;
+			color: white;
+			text-decoration: none;
+			position: fixed;
+			bottom:20px;
+			left:25%;
+		}
+
+		.fa-angle-double-down{
+			font-weight: bold;
+			font-size: 4em;
+			color: white;
+			text-decoration: none;
+			position: fixed;
+			bottom:20px;
+			left:45%;
+		}
+
+		p{
+			font-size: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<div id="score"></div>
+	<canvas id="tetris" width="240" height="400"></canvas>
+	<a id="b1" href="javascript:playerMove(-1);"></a>
+	<a id="b2" href="javascript:playerMove(1);"></a>
+	<a id="b3" href="javascript:playerRotate();"></a>
+	<a id="b4" href="javascript:playerDrop();"></a>
+	<a id="b5" href="javascript:playerPut();"></a>
+	<p id="text"></p>
+	<script src="tetris.js"></script>
+
+</body>
+</html>
